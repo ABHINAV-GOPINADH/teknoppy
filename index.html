@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderly — Discover More. Travel Further.</title>
+  <meta name="description" content="Wanderly helps you explore the world's most breathtaking destinations with curated travel packages, unbeatable deals, and 24/7 support." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">✈</span>
+        <span class="logo__text">Wanderly</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link active">Home</a></li>
+          <li><a href="#destinations" class="nav__link">Destinations</a></li>
+          <li><a href="#packages" class="nav__link">Packages</a></li>
+          <li><a href="#why-us" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary header__cta">Plan Your Trip</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <span class="hero__badge">✦ Award-Winning Travel Experiences</span>
+      <h1 class="hero__title">Explore the World,<br /><em>Your Way</em></h1>
+      <p class="hero__subtitle">
+        From sun-soaked beaches to snow-capped peaks — craft the journey you've
+        always dreamed of with curated destinations and expert guidance.
+      </p>
+      <div class="hero__actions">
+        <a href="#destinations" class="btn btn--hero">Explore Destinations</a>
+        <a href="#packages" class="btn btn--ghost">View Packages</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>12K+</strong>
+          <span>Happy Travellers</span>
+        </div>
+        <div class="hero__stat">
+          <strong>80+</strong>
+          <span>Destinations</span>
+        </div>
+        <div class="hero__stat">
+          <strong>4.9★</strong>
+          <span>Average Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ POPULAR DESTINATIONS ═══════════════ -->
+  <section class="section destinations" id="destinations">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Top Picks</span>
+        <h2 class="section__title">Popular Destinations</h2>
+        <p class="section__desc">
+          Hand-picked locations loved by thousands of travellers — your next
+          adventure starts here.
+        </p>
+      </div>
+
+      <div class="cards-grid destinations__grid">
+
+        <article class="card destination-card">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=600&q=80&auto=format&fit=crop"
+              alt="Bali rice terraces and tropical scenery"
+              class="card__img"
+              loading="lazy"
+            />
+            <span class="card__badge card__badge--hot">🔥 Trending</span>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="card__location"><i class="fa-solid fa-location-dot"></i> Indonesia</span>
+              <span class="card__rating">4.9 ★</span>
+            </div>
+            <h3 class="card__title">Bali</h3>
+            <p class="card__text">
+              Lush rice terraces, ancient temples, vibrant nightlife and
+              world-class surf — Bali has it all.
+            </p>
+            <a href="#packages" class="btn btn--outline card__btn">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card destination-card">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80&auto=format&fit=crop"
+              alt="Dubai skyline at night"
+              class="card__img"
+              loading="lazy"
+            />
+            <span class="card__badge card__badge--new">✨ New Routes</span>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="card__location"><i class="fa-solid fa-location-dot"></i> UAE</span>
+              <span class="card__rating">4.8 ★</span>
+            </div>
+            <h3 class="card__title">Dubai</h3>
+            <p class="card__text">
+              Iconic skylines, luxury shopping, desert safaris and futuristic
+              wonders await in the City of Gold.
+            </p>
+            <a href="#packages" class="btn btn--outline card__btn">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card destination-card">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&q=80&auto=format&fit=crop"
+              alt="Maldives overwater bungalows"
+              class="card__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="card__location"><i class="fa-solid fa-location-dot"></i> Indian Ocean</span>
+              <span class="card__rating">5.0 ★</span>
+            </div>
+            <h3 class="card__title">Maldives</h3>
+            <p class="card__text">
+              Crystal-clear lagoons, overwater bungalows and the most pristine
+              coral reefs on Earth.
+            </p>
+            <a href="#packages" class="btn btn--outline card__btn">Explore →</a>
+          </div>
+        </article>
+
+        <article class="card destination-card">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80&auto=format&fit=crop"
+              alt="Switzerland alpine mountains"
+              class="card__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="card__location"><i class="fa-solid fa-location-dot"></i> Europe</span>
+              <span class="card__rating">4.9 ★</span>
+            </div>
+            <h3 class="card__title">Switzerland</h3>
+            <p class="card__text">
+              Majestic Alps, chocolate-box villages, pristine lakes and some of
+              the world's finest ski resorts.
+            </p>
+            <a href="#packages" class="btn btn--outline card__btn">Explore →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TRAVEL PACKAGES ═══════════════ -->
+  <section class="section packages" id="packages">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Our Offers</span>
+        <h2 class="section__title">Travel Packages</h2>
+        <p class="section__desc">
+          All-inclusive bundles carefully designed to give you maximum
+          experience, minimum hassle.
+        </p>
+      </div>
+
+      <div class="cards-grid packages__grid">
+
+        <article class="card package-card package-card--featured">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80&auto=format&fit=crop"
+              alt="Island Bliss package"
+              class="card__img"
+              loading="lazy"
+            />
+            <span class="card__badge card__badge--featured">⭐ Best Seller</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Island Bliss Escape</h3>
+            <div class="package-meta">
+              <span><i class="fa-regular fa-calendar"></i> 7 Nights / 8 Days</span>
+              <span><i class="fa-solid fa-users"></i> Up to 4 people</span>
+            </div>
+            <ul class="package-includes">
+              <li>✓ Return flights included</li>
+              <li>✓ 5-star resort stay</li>
+              <li>✓ Daily breakfast &amp; dinner</li>
+            </ul>
+            <div class="package-price">
+              <span class="package-price__from">Starting from</span>
+              <span class="package-price__amount">₹89,999<small>/person</small></span>
+            </div>
+            <a href="#contact" class="btn btn--primary card__btn">Book Now</a>
+          </div>
+        </article>
+
+        <article class="card package-card">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=80&auto=format&fit=crop"
+              alt="Alpine Adventure package"
+              class="card__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Alpine Adventure</h3>
+            <div class="package-meta">
+              <span><i class="fa-regular fa-calendar"></i> 5 Nights / 6 Days</span>
+              <span><i class="fa-solid fa-users"></i> Up to 6 people</span>
+            </div>
+            <ul class="package-includes">
+              <li>✓ Hotel accommodation</li>
+              <li>✓ Ski pass &amp; equipment</li>
+              <li>✓ Guided mountain tours</li>
+            </ul>
+            <div class="package-price">
+              <span class="package-price__from">Starting from</span>
+              <span class="package-price__amount">₹1,24,999<small>/person</small></span>
+            </div>
+            <a href="#contact" class="btn btn--primary card__btn">Book Now</a>
+          </div>
+        </article>
+
+        <article class="card package-card">
+          <div class="card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop"
+              alt="Desert & City package"
+              class="card__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Desert &amp; City Odyssey</h3>
+            <div class="package-meta">
+              <span><i class="fa-regular fa-calendar"></i> 6 Nights / 7 Days</span>
+              <span><i class="fa-solid fa-users"></i> Up to 2 people</span>
+            </div>
+            <ul class="package-includes">
+              <li>✓ Luxury hotel stay</li>
+              <li>✓ Desert safari &amp; dune bash</li>
+              <li>✓ City tour &amp; Burj Khalifa</li>
+            </ul>
+            <div class="package-price">
+              <span class="package-price__from">Starting from</span>
+              <span class="package-price__amount">₹74,999<small>/person</small></span>
+            </div>
+            <a href="#contact" class="btn btn--primary card__btn">Book Now</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WHY CHOOSE US ═══════════════ -->
+  <section class="section why-us" id="why-us">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Our Promise</span>
+        <h2 class="section__title">Why Choose Wanderly?</h2>
+        <p class="section__desc">
+          We go beyond booking tickets — we craft stories you'll tell for a
+          lifetime.
+        </p>
+      </div>
+
+      <div class="why-us__grid">
+
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <i class="fa-solid fa-tag"></i>
+          </div>
+          <h3 class="benefit-card__title">Best Travel Deals</h3>
+          <p class="benefit-card__text">
+            We negotiate directly with airlines and hotels to bring you prices
+            you won't find anywhere else — guaranteed.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <h3 class="benefit-card__title">Handpicked Destinations</h3>
+          <p class="benefit-card__text">
+            Every destination is vetted by our travel experts for quality,
+            safety and unforgettable experiences.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="benefit-card__title">24/7 Support</h3>
+          <p class="benefit-card__text">
+            Whether you're at the airport at midnight or on a beach in Bali —
+            our team is always just a call away.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Traveller Stories</span>
+        <h2 class="section__title">What Our Guests Say</h2>
+      </div>
+      <div class="testimonials__grid">
+
+        <blockquote class="testimonial-card">
+          <p class="testimonial-card__text">
+            "Wanderly made our honeymoon in the Maldives absolutely magical.
+            Every detail was perfect — from the overwater villa to the sunset
+            dinner. 10/10!"
+          </p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar">P</div>
+            <div>
+              <strong>Priya S.</strong>
+              <span>Mumbai, India</span>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p class="testimonial-card__text">
+            "The Switzerland package exceeded every expectation. The ski
+            guides were phenomenal and the hotel views were straight out of a
+            postcard."
+          </p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar">R</div>
+            <div>
+              <strong>Rahul M.</strong>
+              <span>Bangalore, India</span>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p class="testimonial-card__text">
+            "The 24/7 support is no joke — they helped us rebook a cancelled
+            flight at 2 AM and still made sure we didn't miss our connection.
+            Truly impressive."
+          </p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar">A</div>
+            <div>
+              <strong>Ananya K.</strong>
+              <span>Delhi, India</span>
+            </div>
+            <div class="testimonial-card__stars">★★★★★</div>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FINAL CTA ═══════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="cta-section__overlay"></div>
+    <div class="container cta-section__inner">
+      <span class="section__label cta-section__label">Your Journey Awaits</span>
+      <h2 class="cta-section__title">Ready for Your Next Adventure?</h2>
+      <p class="cta-section__desc">
+        Tell us where you want to go — we'll handle everything else. No hidden
+        fees, no stress, just pure travel joy.
+      </p>
+      <div class="cta-section__actions">
+        <a href="mailto:hello@wanderly.travel" class="btn btn--hero">Plan Your Trip</a>
+        <a href="tel:+911800123456" class="btn btn--ghost">
+          <i class="fa-solid fa-phone"></i> Call Us Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#" class="logo footer__logo">
+          <span class="logo__icon">✈</span>
+          <span class="logo__text">Wanderly</span>
+        </a>
+        <p class="footer__tagline">Discover More. Travel Further.</p>
+        <p class="footer__about">
+          We believe travel changes lives. Since 2019, Wanderly has helped
+          thousands of explorers create memories that last a lifetime.
+        </p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram" class="footer__social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="footer__social"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" class="footer__social"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube" class="footer__social"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#why-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Top Destinations</h4>
+        <ul class="footer__links">
+          <li><a href="#">Bali, Indonesia</a></li>
+          <li><a href="#">Dubai, UAE</a></li>
+          <li><a href="#">Maldives</a></li>
+          <li><a href="#">Switzerland</a></li>
+          <li><a href="#">Paris, France</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact Us</h4>
+        <ul class="footer__contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>42 Explorer Street, Mumbai 400001, India</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+911800123456">1800-123-456 (Toll Free)</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:hello@wanderly.travel">hello@wanderly.travel</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2026 Wanderly Pvt Ltd. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
